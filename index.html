@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Creative Smile</title>
+    <title>Creative Smile</title>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #e0bbff, #957dad);
+        color: #fff;
+      }
+
+      header {
+        background-color: #5e2d79; /* Header background color */
+        padding: 20px 0;
+        text-align: center; /* Centering the text */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      header h1 {
+        font-size: 2.5em; /* Font size */
+        color: #e0bbff; /* Text color */
+        margin: 0;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        color: #e0bbff; /* Link color */
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2em;
+      }
+
+      nav a:hover {
+        text-decoration: underline; /* Underline on hover */
+      }
+
+      .video {
+        position: relative;
+        overflow: hidden;
+        display: flex; /* Use flexbox to center */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 600px; /* Set a height for the video container */
+
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+
+      .contenido-video {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: white;
+        padding: 20px;
+      }
+
+      .sobre-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        background-color: #5e2d79; /* Section background color */
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+      }
+
+      .contenido {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .imagen {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .imagen img {
+        max-width: 80%; /* Adjusted for better responsiveness */
+        height: auto;
+        border-radius: 15px;
+      }
+
+      .contenido-citas h2 {
+        font-size: 2.5rem;
+        color: #e0bbff; /* Heading color */
+        margin-bottom: 20px;
+      }
+
+      .contenido-citas h3 {
+        font-size: 1.8rem;
+        color: #b583d1; /* Subheading color */
+        margin-top: 20px;
+      }
+
+      .contenido-citas p {
+        font-size: 1.4rem; /* Font size */
+        text-align: justify; /* Justified text */
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: #fff; /* Ensuring text is readable */
+      }
+    </style>
+  </head>
+  <body>
+    <header id="inicio" class="header">
+      <div class="contenedor contenido-header">
+        <h1>Creative Smile</h1>
+        <nav class="navegacion-principal">
+          <a href="index.html">Inicio</a>
+          <a href="login.php">Iniciar Sesión</a>
+          <a href="CrearUsuario.php">Registrarse</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="Equipo.html">Equipo</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="video">
+      <div class="overlay">
+        <div class="contenedor contenido-video">
+          
+        </div>
+      </div>
+      <video
+        id="miVideo"
+        src="./video/cepillar.mp4"
+        autoplay
+        muted
+        onloadedmetadata="this.currentTime = 9"
+        ontimeupdate="if(this.currentTime >= 30){this.currentTime = 9}"
+        loop
+      ></video>
+    </div>
+
+    <section id="mision-vision" class="sobre-nosotros">
+      <div class="contenido">
+        <h2>Misión y Visión</h2>
+        <p>
+          <strong>Nuestra misión:</strong> Queremos hacer que la salud dental sea accesible para todos, eliminando barreras y simplificando los procesos. Nuestro compromiso es brindar herramientas digitales innovadoras que mejoren la experiencia del paciente y optimicen la gestión de los servicios odontológicos.
+        </p>
+        <p>
+          <strong>Nuestra visión:</strong> Aspiramos a ser la aplicación líder en el cuidado dental, promoviendo una sociedad más saludable y sonrisas más brillantes. Queremos ser el puente entre la tecnología y la odontología, empoderando a los pacientes con información y acceso en tiempo real.
+        </p>
+        <p>
+          En <strong>Creative Smile</strong>, creemos en el poder de la tecnología para transformar vidas y garantizar que cada sonrisa refleje confianza y salud. Nos esforzamos cada día para crear soluciones prácticas y efectivas para nuestros usuarios.
+        </p>
+      </div>
+    </section>
+
+    <section id="nosotros" class="sobre-nosotros">
+      <div class="contenido">
+        <div class="imagen">
+          <img src="src/img/sobre-nosotros.jpeg" alt="Sobre nosotros" />
+        </div>
+        <div class="contenido-citas">
+          <h2>Sobre Nosotros</h2>
+          <p class="fecha">Viernes 13, Bogotá</p>
+          <p>
+            En Creative Smile, creemos que una sonrisa saludable es la base de una vida plena. Somos una plataforma diseñada
+            para revolucionar el acceso a los servicios odontológicos, conectando a pacientes con profesionales altamente calificados de manera rápida,
+            sencilla y segura.
+          </p>
+          <h3>¿Qué hacemos?</h3>
+          <p>
+            Facilitamos la gestión de citas odontológicas, recordatorios personalizados, seguimiento de tratamientos y acceso a consejos
+            de cuidado bucal, todo desde la comodidad de tu dispositivo móvil.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
