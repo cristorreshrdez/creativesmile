@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Creative Smile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" crossorigin="anonymous">
     <title>Creative Smile</title>
     <style>
       body {
@@ -128,13 +125,14 @@
   <body>
     <header id="inicio" class="header">
       <div class="contenedor contenido-header">
-        <h1>Creative Smile</h1>
+        <h1>Creative <i class="fa-solid fa-tooth" style="color: #E0BBFF;"></i> Smile</h1>
+        </br>
         <nav class="navegacion-principal">
           <a href="index.html">Inicio</a>
-          <a href="login.php">Iniciar Sesión</a>
-          <a href="CrearUsuario.php">Registrarse</a>
           <a href="#nosotros">Nosotros</a>
-          <a href="/equipo.html">Equipo</a>
+          <a href="Equipo.html">Equipo</a>
+          <a href="CrearUsuario.html">Registrarse</a>
+          <a href="login.html">Iniciar Sesión</a>
         </nav>
       </div>
     </header>
@@ -147,7 +145,7 @@
       </div>
       <video
         id="miVideo"
-        src="/video/cepillar.mp4"
+        src="./video.webm"
         autoplay
         muted
         onloadedmetadata="this.currentTime = 9"
@@ -158,36 +156,39 @@
 
     <section id="mision-vision" class="sobre-nosotros">
       <div class="contenido">
-        <h2>Misión y Visión</h2>
-        <p>
-          <strong>Nuestra misión:</strong> Queremos hacer que la salud dental sea accesible para todos, eliminando barreras y simplificando los procesos. Nuestro compromiso es brindar herramientas digitales innovadoras que mejoren la experiencia del paciente y optimicen la gestión de los servicios odontológicos.
-        </p>
-        <p>
-          <strong>Nuestra visión:</strong> Aspiramos a ser la aplicación líder en el cuidado dental, promoviendo una sociedad más saludable y sonrisas más brillantes. Queremos ser el puente entre la tecnología y la odontología, empoderando a los pacientes con información y acceso en tiempo real.
-        </p>
-        <p>
-          En <strong>Creative Smile</strong>, creemos en el poder de la tecnología para transformar vidas y garantizar que cada sonrisa refleje confianza y salud. Nos esforzamos cada día para crear soluciones prácticas y efectivas para nuestros usuarios.
-        </p>
+        <div class="contenido-citas">
+          <h2>Misión y Visión</h2>
+          </br>
+          <p>
+            <strong>Nuestra misión:</strong> Queremos hacer que la salud dental sea accesible para todos, eliminando barreras y simplificando los procesos. Nuestro compromiso es brindar herramientas digitales innovadoras que mejoren la experiencia del paciente y optimicen la gestión de los servicios odontológicos.
+          </p>
+          </br>
+          <p>
+            <strong>Nuestra visión:</strong> Aspiramos a ser la aplicación líder en el cuidado dental, promoviendo una sociedad más saludable y sonrisas más brillantes. Queremos ser el puente entre la tecnología y la odontología, empoderando a los pacientes con información y acceso en tiempo real.
+          </p>
+          </br>
+          <p>
+            En <strong>Creative Smile</strong>, creemos en el poder de la tecnología para transformar vidas y garantizar que cada sonrisa refleje confianza y salud. Nos esforzamos cada día para crear soluciones prácticas y efectivas para nuestros usuarios.
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="nosotros" class="sobre-nosotros">
       <div class="contenido">
-        <div class="imagen">
-          <img src="src/img/sobre-nosotros.jpeg" alt="Sobre nosotros" />
-        </div>
         <div class="contenido-citas">
           <h2>Sobre Nosotros</h2>
-          <p class="fecha">Viernes 13, Bogotá</p>
           <p>
-            En Creative Smile, creemos que una sonrisa saludable es la base de una vida plena. Somos una plataforma diseñada
-            para revolucionar el acceso a los servicios odontológicos, conectando a pacientes con profesionales altamente calificados de manera rápida,
-            sencilla y segura.
+            En Creative Smile, creemos que una sonrisa saludable es la base de una vida plena. Somos una plataforma diseñada para revolucionar el acceso a los servicios odontológicos, conectando a pacientes con profesionales altamente calificados de manera rápida, sencilla y segura.
           </p>
-          <h3>¿Qué hacemos?</h3>
+          </br>
+          <div class="imagen">
+            <img src="./sobre-nosotros.png" alt="Imagen de familia con sonrisas brillantes"/>
+          </div>
+          </br>
+          <h2>¿Qué hacemos?</h2>
           <p>
-            Facilitamos la gestión de citas odontológicas, recordatorios personalizados, seguimiento de tratamientos y acceso a consejos
-            de cuidado bucal, todo desde la comodidad de tu dispositivo móvil.
+            Facilitamos la gestión de citas odontológicas, recordatorios personalizados, seguimiento de tratamientos y acceso a consejos de cuidado bucal, todo desde la comodidad de tu dispositivo móvil.
           </p>
         </div>
       </div>

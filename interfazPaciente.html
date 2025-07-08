@@ -1,0 +1,272 @@
+<h1><strong>Paciente: </strong>Amparo Grisales Patiño</h1>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" crossorigin="anonymous">
+        <title>Panel de Pacientes</title>
+        <style>
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to bottom, #e0bbff, #957dad);
+                color: #fff;
+            }
+
+            header {
+                background-color: #5e2d79; /* Header background color */
+                padding: 20px 0;
+                text-align: center; /* Centering the text */
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            header h1 {
+                font-size: 2.5em; /* Font size */
+                color: #e0bbff; /* Text color */
+                margin: 0;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                color: #e0bbff; /* Link color */
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 1.2em;
+            }
+
+            nav a:hover {
+                text-decoration: underline; /* Underline on hover */
+            }
+
+            .video {
+                position: relative;
+                overflow: hidden;
+                display: flex; /* Use flexbox to center */
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                height: 600px; /* Set a height for the video container */
+
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+
+            .contenido-video {
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                color: white;
+                padding: 20px;
+            }
+
+            .sobre-nosotros {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px 20px;
+                background-color: #5e2d79; /* Section background color */
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                margin: 20px;
+            }
+
+            .contenido {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .imagen {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .imagen img {
+                max-width: 80%; /* Adjusted for better responsiveness */
+                height: auto;
+                border-radius: 15px;
+            }
+
+            .contenido-citas h2 {
+                font-size: 2.5rem;
+                color: #e0bbff; /* Heading color */
+                margin-bottom: 20px;
+            }
+
+            .contenido-citas h3 {
+                font-size: 1.8rem;
+                color: #b583d1; /* Subheading color */
+                margin-top: 20px;
+            }
+
+            .contenido-citas p {
+                font-size: 1.4rem; /* Font size */
+                text-align: justify; /* Justified text */
+                line-height: 1.8;
+                margin-bottom: 20px;
+                color: #fff; /* Ensuring text is readable */
+            }
+
+
+
+            /* Estilos generales */
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to bottom, #e0bbff, #957dad);
+                color: #fff;
+            }
+
+            /* Encabezado */
+            header {
+                background-color: #5e2d79;
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            header h1 {
+                font-size: 2.5em;
+                margin: 0;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 20px 0 0;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            nav ul li {
+                margin: 0;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                font-size: 1.2em;
+                padding: 10px 20px;
+                color: #fff;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                transition: 0.3s ease;
+            }
+
+            nav ul li a:hover {
+                background-color: #7d3e9d;
+                border-color: #fff;
+            }
+
+            /* Sección principal */
+            main {
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            main h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            /* Footer */
+            footer {
+                background-color: #5e2d79;
+                padding: 10px 0;
+                text-align: center;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                color: #e0bbff;
+                font-size: 0.9em;
+                box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Botones interactivos */
+            button {
+                background-color: #7d3e9d;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1em;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #b583d1;
+            }
+
+            h1 {
+                padding-top: 15px;
+                padding-left: 20px;
+                color: #7d3e9d;
+            }
+
+            main h2 {
+                font-size: 5em;
+                margin: 0;
+                text-align: center;
+            }
+
+            body main {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to bottom, #e0bbff, #957dad);
+                color: #fff;
+                height: 68vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header id="inicio" class="header">
+            <div class="contenedor contenido-header">
+                <h1>Creative <i class="fa-solid fa-tooth" style="color: #E0BBFF;"></i> Smile</h1>
+                </br>
+                <nav class="navegacion-principal">
+                <a href="interfazPaciente.html">Inicio</a>
+                <a href="Paciente_1_AgendarCita.html">Agendar Cita</a>
+                <a href="Paciente_2_mostrarCitaActual.html">Citas Agendadas</a>
+                <a href="Paciente_3_modificarDatos.html">Actualizar Datos</a>
+                <a href="index.html">Cerrar Sesión</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h2>¡Bienvenido al</br>Panel del Paciente!</h2>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sistema de Gestión de Pacientes</p>
+        </footer>
+    </body>
+</html>
